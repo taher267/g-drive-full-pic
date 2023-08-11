@@ -1,0 +1,224 @@
+.btn {
+  display: flex;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  border: 1px solid #ddd;
+  font-size: 20px;
+  padding: 10px 33px;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+.w-100 {
+  width: 100%;
+}
+.w-50 {
+  width: 50%;
+}
+.bg-primary {
+  background-color: #009dea;
+  color: beige;
+}
+
+/*=============================================
+=            Navbar            =
+=============================================*/
+
+.navbarUl {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+.navbarUl a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.4s all ease-in-out;
+  text-transform: capitalize;
+}
+
+.navbarUl a:hover {
+  color: blue;
+}
+/*=====  End of Navbar  ======*/
+
+/*=============================================
+=            Input            =
+=============================================*/
+
+input.input {
+  font-size: 16px;
+  padding: 11px;
+  display: block;
+  width: 100%;
+  color: #484848;
+  box-shadow: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid #ebebeb;
+  transition: border-color 0.2s ease;
+  margin-bottom: 10px;
+}
+
+input.input:focus {
+  outline: none;
+  border-color: #028489;
+}
+/*=====  End of Input  ======*/
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
+
+/*=============================================
+=            Admin            =
+=============================================*/
+
+/*=============================================
+=            New Product From            =
+=============================================*/
+
+form.admin__new-priduct-form {
+  width: 95%;
+  margin: auto;
+}
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  form.admin__new-priduct-form {
+    width: 80%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  form.admin__new-priduct-form {
+    width: 75%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  form.admin__new-priduct-form {
+    width: 65%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  form.admin__new-priduct-form {
+    width: 45%;
+  }
+}
+/*=====  End of New Product From  ======*/
+
+/*=====  End of Admin  ======*/
+
+/*=============================================
+=            Products            =
+=============================================*/
+.products-container {
+  width: 100%;
+}
+.pz_wrapper {
+  display: flex;
+  margin-top: 30px;
+  /* overflow: scroll; */
+}
+
+.pz_sidebar {
+  max-width: 300px;
+}
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  min-height: 650px;
+}
+
+.cart-container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.cart-header {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.cart-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.cart-item {
+  width: 200px;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.cart-item img {
+  width: 100%;
+}
+
+.cart-item h4 {
+  margin-bottom: 5px;
+}
+
+.cart-item p {
+  margin-bottom: 10px;
+}
+
+.cart-item .counter {
+  margin-bottom: 5px;
+}
+
+.cart-item .amount {
+  font-weight: bold;
+}
+
+.cart-total {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.cart-checkout {
+  text-align: center;
+}
+.featuredImageWrapper {
+  position: relative;
+  width: 100%;
+  /* max-width: 700px; */
+  aspect-ratio: 90/100;
+  height: 100%;
+}
+
+.featuredImageWrapper img {
+  max-height: 100%;
+}
+@media screen and (max-width: 1199px) {
+  .products-list {
+    display: block;
+  }
+  .featuredImageWrapper {
+    aspect-ratio: 80/100;
+  }
+  .featuredImageWrapper img {
+    height: auto !important;
+  }
+}
+/*=====  End of Products  ======*/
