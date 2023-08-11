@@ -7,7 +7,7 @@ import { ProductProps } from '@/types';
 const Products: React.FC = () => {
   const [allProducts, setAllProducts] = React.useState<[] | ProductProps[]>([]);
   const [loading, setLoading] = React.useState<boolean>(false);
-  // const [height, setHeight] = React.useState<number | null>(window.innerHeight);
+  const [height, setHeight] = React.useState<number>(0);
   React.useEffect(() => {
     setLoading(true);
     axios
@@ -21,13 +21,13 @@ const Products: React.FC = () => {
       .finally(() => {
         setLoading(false);
       });
+    if (typeof window !== undefined) {
+      setHeight(window.innerHeight);
+    }
   }, []);
   return (
     <>
-      <div
-        className="pz_wrapper"
-        style={{ minHeight: `${window?.innerHeight}px` }}
-      >
+      <div className="pz_wrapper" style={{ minHeight: `${height}px` }}>
         <div className="pz_sidebar">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
           officiis odio dolorem, ad suscipit minus. Asperiores consequatur
