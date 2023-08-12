@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-// const baseURL = 'https://stormy-leather-jacket-wasp.cyclic.app/api/v1';
+// const baseURL = 'https://full-pic.onrender.com/api/v1';
 // const baseURL = 'http://localhost:4005/api/v1';
 const baseURL =
   process.env.NODE_ENV === 'production'
-    ? 'https://stormy-leather-jacket-wasp.cyclic.app/api/v1'
+    ? 'https://full-pic.onrender.com/api/v1'
     : 'http://localhost:4005/api/v1';
 export const axiosApi = axios.create({
   baseURL,
